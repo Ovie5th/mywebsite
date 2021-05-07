@@ -500,7 +500,7 @@ input:focus {
     display: flex;
     height: 50px;
     border: 0;
-    border: 1px solid #022335;
+    /* border: 1px solid #022335; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -657,7 +657,7 @@ input:focus {
     }
     .mobile_dropdown_image {
         height: 100px;
-        padding-right: 20px;
+        padding-right: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -804,17 +804,18 @@ input:focus {
     }
     .mobile_search_bar {
         background-color: #f4f4f4;
-        border-radius: 15px;
+        border-radius: 16px;
         margin: 5px 0;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         height: 40px;
-        width: 90%;
+        width: 85%;
     }
     .search_space {
         width: 100%;
         border: none;
+        font-size: 18px;
     }
     .mobile_status img {
         height: 50px;
