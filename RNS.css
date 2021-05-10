@@ -183,6 +183,7 @@ input:focus {
     top: 45px;
     display: flex;
     justify-content: center;
+    flex-shrink: 1;
     height: 60vh;
     visibility: hidden;
 }
@@ -195,6 +196,7 @@ input:focus {
 .dropdown_left {
     border-right: 1px solid #232323;
     padding: 10px;
+    width: 50%;
 }
 
 .dropdown_left li a {
@@ -202,11 +204,14 @@ input:focus {
 }
 
 .dropdown_right {
+    display: flex;
+    flex-shrink: 1;
     padding: 10px;
 }
 
 .dropdown_right img {
     padding: 10px;
+    width: 30%;
 }
 
 .nav_header_bottom_list>li:hover {
@@ -219,9 +224,10 @@ input:focus {
     position: absolute;
 }
 
-.dropdown_right img {
+
+/* .dropdown_right img {
     height: 50vh;
-}
+} */
 
 
 /* landing image styles */
@@ -489,6 +495,11 @@ input:focus {
     text-align: left;
 }
 
+.help li,
+.about_us li {
+    padding-bottom: 15px;
+}
+
 .be_first {
     width: 33%;
     display: flex;
@@ -509,6 +520,7 @@ input:focus {
     height: 50px;
     width: 60%;
     border: none;
+    border-radius: 0;
     padding-left: 10px;
     font-size: 18px;
 }
@@ -525,7 +537,7 @@ input:focus {
     padding: 0 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .mobile_nav_center {
         background: #022335;
         height: 5vh;
@@ -534,19 +546,28 @@ input:focus {
     .mobile_nav_header {
         display: flex;
         align-items: center;
+        /* justify-content: left; */
+        flex-shrink: 1;
+        width: 100%;
+    }
+    .mobile_nav_right {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
+        width: 55%;
     }
     .mobile_logo {
         height: 30px;
         width: 50px;
     }
-    .mobile_signin {
+    /* .mobile_signin {
         display: flex;
         align-items: center;
-    }
+    } */
     .hamburger {
         display: flex;
         align-items: center;
+        width: 45%;
     }
     .hamburge {
         padding-right: 10px;
@@ -641,6 +662,33 @@ input:focus {
         text-decoration: none;
         color: #ffffff;
     }
+    .mobile_sub_menu {
+        height: 100%;
+        width: 60%;
+        background-color: #ffffff;
+        color: #022335;
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        overflow: visible;
+        overflow: scroll;
+        font-size: 20px;
+    }
+    .mobile_sub_menu li a {
+        height: 100px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .mobile_sub_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile_sub_new {
+        visibility: visible;
+    }
     .nav_header_bottom {
         display: none;
     }
@@ -700,7 +748,7 @@ input:focus {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
     html {
         font-size: 75%;
     }
@@ -712,17 +760,26 @@ input:focus {
     .mobile_nav_header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: left;
+        flex-shrink: 1;
         height: 8vh;
+        width: 100%;
+    }
+    .mobile_nav_right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 55%;
     }
     .mobile_logo {
         height: 30px;
         width: 50px;
     }
-    .mobile_signin {
+    /* .mobile_signin {
         display: flex;
         align-items: center;
-    }
+        justify-content: right;
+    } */
     .mobile_singin_link {
         text-decoration: none;
         color: #ffffff;
@@ -731,6 +788,7 @@ input:focus {
     .hamburger {
         display: flex;
         align-items: center;
+        width: 45%;
     }
     .hamburge {
         padding-right: 10px;
@@ -840,6 +898,34 @@ input:focus {
         text-decoration: none;
         color: #ffffff;
     }
+    .mobile_sub_menu {
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        color: #022335;
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        overflow: visible;
+        overflow: scroll;
+        font-size: 20px;
+    }
+    .mobile_sub_menu li a {
+        height: 100px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .mobile_sub_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    .mobile_sub_new {
+        visibility: visible;
+    }
     .landing_image {
         background-size: cover;
         background-position: left;
@@ -907,5 +993,6 @@ input:focus {
     }
     .be_first_input {
         width: 90%;
+        border-radius: 0;
     }
 }
