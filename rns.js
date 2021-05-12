@@ -12,128 +12,79 @@ togglebutton.addEventListener('click', () => {
 
 const mobiledropdown = document.querySelectorAll(".mobile_dropdown_image");
 const submenu = document.querySelectorAll(".mobile_sub_menu");
-const lefts = document.querySelectorAll(".left_arrow");
-
-// mobiledropdown.forEach(mobiledrop => {
-//     submenu.forEach(menu => {
-//         mobiledrop.addEventListener('click', () => {
-//             menu.classList.toggle("mobile_sub_new");
-//         })
-//     })
-// })
+const leftarrow = document.querySelectorAll(".left_arrow");
 
 
 
-// mobiledropdown.forEach(mobiledrop => {
-//     submenu.forEach(menu => {
-//         mobiledrop.addEventListener('click', () => {
-//             menu.classList.toggle("mobile_sub_menu");
-//         })
-//     })
-// })
+pants = mobiledropdown[0];
+shirts = mobiledropdown[1];
+accessories = mobiledropdown[2];
+shoes = mobiledropdown[3];
+watches = mobiledropdown[4];
+perfumes = mobiledropdown[5];
 
 
-a = mobiledropdown[0];
-b = mobiledropdown[1];
-c = mobiledropdown[2];
-d = mobiledropdown[3];
-e = mobiledropdown[4];
-f = mobiledropdown[5];
-aa = submenu[0];
-bb = submenu[1];
-cc = submenu[2];
-dd = submenu[3];
-ee = submenu[4];
-ff = submenu[5];
-l = lefts[0];
-m = lefts[1];
-n = lefts[2];
-o = lefts[3];
-p = lefts[4];
-q = lefts[5];
-r = lefts[6];
+pantsmenu = submenu[0];
+shirtssmenu = submenu[1];
+accessoriessmenu = submenu[2];
+shoesmenu = submenu[3];
+watchesmenu = submenu[4];
+perfumesmenu = submenu[5];
 
-a.addEventListener('click', () => {
-    aa.classList.toggle("mobile_sub_new");
+
+pantsleft = leftarrow[0];
+shirtsleft = leftarrow[1];
+accessoriesleft = leftarrow[2];
+shoesleft = leftarrow[3];
+watchesleft = leftarrow[4];
+perfumesleft = leftarrow[5];
+
+// event listeners for the dropdown menu
+
+pants.addEventListener('click', () => {
+    pantsmenu.classList.toggle("mobile_sub_new");
 })
 
-b.addEventListener('click', () => {
-    bb.classList.toggle("mobile_sub_new");
+shirts.addEventListener('click', () => {
+    shirtssmenu.classList.toggle("mobile_sub_new");
 })
-c.addEventListener('click', () => {
-    cc.classList.toggle("mobile_sub_new");
-})
-
-d.addEventListener('click', () => {
-    dd.classList.toggle("mobile_sub_new");
+accessories.addEventListener('click', () => {
+    accessoriessmenu.classList.toggle("mobile_sub_new");
 })
 
-e.addEventListener('click', () => {
-    ee.classList.toggle("mobile_sub_new");
+shoes.addEventListener('click', () => {
+    shoesmenu.classList.toggle("mobile_sub_new");
 })
 
-f.addEventListener('click', () => {
-    ff.classList.toggle("mobile_sub_new");
+watches.addEventListener('click', () => {
+    watchesmenu.classList.toggle("mobile_sub_new");
 })
 
-l.addEventListener('click', () => {
-    aa.classList.toggle("mobile_sub_new");
-})
-m.addEventListener('click', () => {
-    bb.classList.toggle("mobile_sub_new");
-})
-n.addEventListener('click', () => {
-    cc.classList.toggle("mobile_sub_new");
-})
-o.addEventListener('click', () => {
-    dd.classList.toggle("mobile_sub_new");
-})
-p.addEventListener('click', () => {
-    ee.classList.toggle("mobile_sub_new");
-})
-q.addEventListener('click', () => {
-    ff.classList.toggle("mobile_sub_new");
+perfumes.addEventListener('click', () => {
+    perfumesmenu.classList.toggle("mobile_sub_new");
 })
 
+// event listeners for the left arrow keys
 
+pantsleft.addEventListener('click', () => {
+    pantsmenu.classList.toggle("mobile_sub_new");
+})
 
-// lefts.forEach(left => {
+shirtsleft.addEventListener('click', () => {
+    shirtssmenu.classList.toggle("mobile_sub_new");
+})
+accessoriesleft.addEventListener('click', () => {
+    accessoriessmenu.classList.toggle("mobile_sub_new");
+})
 
+shoesleft.addEventListener('click', () => {
+    shoesmenu.classList.toggle("mobile_sub_new");
+})
 
+watchesleft.addEventListener('click', () => {
+    watchesmenu.classList.toggle("mobile_sub_new");
+})
 
-//     left.addEventListener('click', e => {
-//         e.target = left.classList.toggle('mobiledropdown');
-//         // })
-//         // left.addEventListener('click', () => {
-//         //     b.classList.toggle('mobile_sub_new');
-//         // })
-//         // left.addEventListener('click', () => {
-//         //     cc.classList.toggle('mobile_sub_new');
-//         // })
-//         // left.addEventListener('click', () => {
-//         //     dd.classList.toggle('mobile_sub_new');
-//         // })
-//         // left.addEventListener('click', () => {
-//         //     ee.classList.toggle('mobile_sub_new');
-//         // })
-//         // left.addEventListener('click', () => {
-//         //     ff.classList.toggle('mobile_sub_new');
-//     })
-// })
-
-
-// mobiledropdown.addEventListener('click', () => {
-//     submenu.classList.toggle("mobile_sub_new");
-// })
-
-// left.forEach(lef => {
-//     lef.addEventListener('click', () => {
-//         submenu.forEach(sub => {
-//             sub.classList.toggle("mobile_sub_new");
-//         })
-//     })
-// })
-
-// togglebutton.addEventListener('click', () => {
-//     submenu.classList.toggle("hamburger");
-// })
+perfumesleft.addEventListener('click', () => {
+    perfumesmenu.classList.toggle("mobile_sub_new");
+})

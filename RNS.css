@@ -258,11 +258,16 @@ input:focus {
     background: #ffffff;
     color: #022335;
     border: 1px solid #ffffff;
-    padding: 0 24px;
-    font: 14px;
-    height: 40px;
+    padding: 0 50px;
+    height: 60px;
     font-weight: 700;
     margin-top: 20px;
+}
+
+.landing_button a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #022335;
 }
 
 .month_mvp {
@@ -684,7 +689,11 @@ input:focus {
     .mobile_sub_header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: left;
+    }
+    .mobile_sub_header h3 {
+        width: 50%;
+        text-align: right;
     }
     .mobile_sub_new {
         visibility: visible;
@@ -922,6 +931,10 @@ input:focus {
         align-items: center;
         justify-content: space-between;
         height: 50px;
+    }
+    .mobile_sub_header h3 {
+        width: 60%;
+        text-align: left;
     }
     .mobile_sub_new {
         visibility: visible;
