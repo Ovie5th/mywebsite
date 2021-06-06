@@ -88,3 +88,9 @@ watchesleft.addEventListener('click', () => {
 perfumesleft.addEventListener('click', () => {
     perfumesmenu.classList.toggle("mobile_sub_new");
 })
+
+
+// document.getElementById('frmSearch').onsubmit = function() {
+//     window.location = 'http://www.google.com/search?q=site:rns.com.ng ' + document.getElementById('txtSearch').value;
+//     return false;
+// }

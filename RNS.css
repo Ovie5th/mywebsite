@@ -321,6 +321,11 @@ input:focus {
     cursor: pointer;
 }
 
+.month_mvp_card a {
+    text-decoration: none;
+    color: #022335;
+}
+
 .month_mvp_card:last-child {
     margin-right: 1.6%;
 }
@@ -363,6 +368,11 @@ input:focus {
     margin-left: 1%;
     width: 32%;
     cursor: pointer;
+}
+
+.feature_category_card a {
+    text-decoration: none;
+    color: #022335;
 }
 
 .feature_category_card:last-child {
