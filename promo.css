@@ -41,6 +41,10 @@ header {
     margin-bottom: 50px;
 }
 
+.text_wrapper {
+    box-sizing: content-box;
+}
+
 .image {
     width: 50%;
 }
