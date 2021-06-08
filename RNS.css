@@ -415,6 +415,11 @@ input:focus {
     margin-top: 20px;
 }
 
+.tour_button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .services {
     width: 100%;
     display: flex;
