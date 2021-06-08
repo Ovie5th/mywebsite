@@ -235,7 +235,7 @@ input:focus {
 .landing_image {
     display: block;
     box-sizing: border-box;
-    background-image: url("nimble-made-7RIMS-NMsbc-unsplash\ \(1\).jpg");
+    background-image: url("images/nimble-made-7RIMS-NMsbc-unsplash\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 80vh;
@@ -387,7 +387,7 @@ input:focus {
 .tour_ready_wrapper {
     display: block;
     box-sizing: border-box;
-    background-image: url("nimble-made-NS2BZsGxOLE-unsplash\ \(2\).jpg");
+    background-image: url("images/nimble-made-NS2BZsGxOLE-unsplash\ \(2\).jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 80vh;
